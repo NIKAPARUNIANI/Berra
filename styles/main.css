@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+body {
+  color: #5a5a5a;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+body main {
+  width: 90%;
+  height: auto;
+}
+body main header {
+  z-index: 10000000000000002000;
+  width: 90%;
+  height: 9%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.722);
+}
+body main header .right {
+  width: 50%;
+  height: 100%;
+}
+body main header .right > ul {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  width: auto;
+  height: 100%;
+  align-items: center;
+}
+body main header .right > ul .ul__selected {
+  color: white;
+  background-color: #383838;
+  width: 12%;
+  height: 105%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body main header .mobileButton {
+  display: none;
+  position: relative;
+}
+body main header .mobileButton input::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../media/bars-solid.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body main header .mobileButton input {
+  height: 25px;
+  width: 25px;
+}
+body main header .mobileButton ul {
+  display: none;
+  position: absolute;
+  top: 130%;
+  right: -3%;
+  background: #f1f1f1;
+  z-index: 11;
+  border: 1px solid rgba(0, 0, 0, 0.1411764706);
+  line-height: 162%;
+  width: 100px;
+}
+body main header .mobileButton ul li {
+  padding: 3px 5px;
+}
+body main header .mobileButton input:checked ~ ul {
+  display: block;
+}
+body main header::after {
+  content: "";
+  width: 112%;
+  height: 1%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  left: -6%;
+  top: 100%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2392156863);
+}
+body main .firstSection img {
+  position: absolute;
+  bottom: 0;
+}
+body main .firstSection .firstSectionText {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  width: 45%;
+  height: 35%;
+}
+body main .firstSection .firstSectionText > h2 {
+  font-size: 85px;
+}
+body main .firstSection .firstSectionText > h2 span {
+  font-weight: 700;
+}
+body main .firstSection .firstSectionText > h2::after {
+  content: "";
+  border: 4px solid white;
+  position: absolute;
+  width: 89%;
+  height: 79%;
+  top: 10%;
+  left: 5%;
+}
+body main .firstSection .firstSectionText > p {
+  font-size: 20px;
+  font-weight: 700;
+}
+body main .firstSection::after {
+  content: "";
+  width: 106%;
+  height: 1%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  left: -6%;
+  top: 99%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2392156863);
+}
+body main .secondSection {
+  position: absolute;
+  bottom: -12%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  height: 10%;
+  font-weight: 700;
+  align-items: center;
+}
+body main .secondSection__selected {
+  background-color: #383838;
+  color: white;
+  width: 12%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .secondSectionPhotos1 {
+  position: absolute;
+  bottom: -86%;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  width: 62%;
+}
+body main .secondSectionPhotos1 .sidePhotos1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main .secondSectionPhotos2 {
+  position: absolute;
+  bottom: -125%;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  width: 62%;
+}
+body main .secondSectionPhotos3 {
+  position: absolute;
+  bottom: -170%;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  width: 62%;
+}
+body main .secondSectionBottom {
+  position: absolute;
+  bottom: -185%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+}
+body main .thirdSection {
+  position: absolute;
+  bottom: -250%;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-evenly;
+  width: 100%;
+  height: 53%;
+  background: #f7f7f7;
+  flex-direction: column;
+  align-items: center;
+}
+body main .thirdSection h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 1%;
+}
+body main .thirdSection .thirdSectionPhotos {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto1 h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto1 p {
+  font-size: 14px;
+}
+body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto2 h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto2 p {
+  font-size: 14px;
+}
+body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto3 h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto3 p {
+  font-size: 14px;
+}
+body main footer {
+  display: flex;
+  position: absolute;
+  bottom: -267%;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 17%;
+  font-size: 13px;
+}
+body main footer .rightFooter {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  font-weight: 700;
+  font-size: 15px;
+}
+body main .upButton {
+  position: absolute;
+  bottom: -263%;
+  right: 2%;
+  background-color: #383838;
+  color: white;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  body main header .right {
+    display: none;
+  }
+  body main header .mobileButton {
+    display: inline;
+  }
+  body main .firstSection img {
+    height: 63%;
+  }
+  body main .firstSection .firstSectionText {
+    right: 50%;
+    width: 95%;
+    height: 23%;
+    top: 24%;
+    transform: translate(50%, -50%);
+  }
+  body main .firstSection .firstSectionText > h2 {
+    font-size: 35px;
+  }
+  body main .firstSection .firstSectionText > p {
+    font-size: 12px;
+  }
+  body main .secondSection {
+    width: 95%;
+    font-size: 13px;
+  }
+  body main .secondSection a {
+    font-size: 10px;
+  }
+  body main .secondSectionPhotos1 {
+    bottom: -55%;
+    width: 250px;
+    flex-direction: column;
+    height: 41%;
+  }
+  body main .secondSectionPhotos1 img {
+    width: 250px;
+    height: 250px;
+  }
+  body main .secondSectionPhotos1 .sidePhotos1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body main .secondSectionPhotos1 .sidePhotos1 img {
+    width: 110px;
+    height: 110px;
+  }
+  body main .secondSectionPhotos2 {
+    position: absolute;
+    bottom: -70%;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    width: 250px;
+  }
+  body main .secondSectionPhotos2 img {
+    height: 110px;
+    width: 110px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .secondSectionPhotos3 {
+    position: absolute;
+    bottom: -85%;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    width: 250px;
+  }
+  body main .secondSectionPhotos3 img {
+    height: 110px;
+    width: 110px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .secondSectionBottom {
+    font-size: 15px;
+    bottom: -90%;
+  }
+  body main .thirdSection {
+    position: absolute;
+    bottom: -185%;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-evenly;
+    width: 100%;
+    height: 88%;
+    background: #f7f7f7;
+    align-items: center;
+    flex-direction: column;
+  }
+  body main .thirdSection .thirdSectionPhotos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 89%;
+  }
+  body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto1 {
+    width: 275px;
+  }
+  body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto1 img {
+    width: 275px;
+  }
+  body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto1 p {
+    font-size: 11px;
+  }
+  body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto2 {
+    width: 275px;
+  }
+  body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto2 img {
+    width: 275px;
+  }
+  body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto2 p {
+    font-size: 11px;
+  }
+  body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto3 {
+    width: 275px;
+  }
+  body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto3 img {
+    width: 275px;
+  }
+  body main .thirdSection .thirdSectionPhotos .thirdSectionPhoto3 p {
+    font-size: 11px;
+  }
+  body main footer {
+    display: flex;
+    position: absolute;
+    bottom: -193%;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 5%;
+    font-size: 13px;
+    flex-direction: column;
+  }
+  body main footer .rightFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  body main .upButton {
+    bottom: -191%;
+  }
+}/*# sourceMappingURL=main.css.map */

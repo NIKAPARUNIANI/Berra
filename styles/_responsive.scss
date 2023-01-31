@@ -1,0 +1,191 @@
+@media only screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+
+        main {
+            header {
+                .right {
+                    display: none;
+                }
+        
+                .mobileButton {
+                    display: inline;
+                }
+            }
+
+            .firstSection {
+                img {
+                    height: 63%;
+                }
+
+                .firstSectionText {
+                    right: 50%;
+                    width: 95%;
+                    height: 23%;
+                    top: 24%;
+                    transform: translate(50%, -50%);
+
+                    & > h2 {
+                        font-size: 35px;
+                    }
+    
+                    & > p {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .secondSection {
+                width: 95%;
+                font-size: 13px;
+
+                a {
+                    font-size: 10px;
+                }
+            }
+
+            .secondSectionPhotos1 {
+                bottom: -55%;
+                width: 250px;
+                flex-direction: column;
+                height: 41%;
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+
+                .sidePhotos1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    img {
+                        width: 110px;
+                        height: 110px;
+                    }
+                }
+            }
+
+            .secondSectionPhotos2 {
+                position: absolute;
+                bottom: -70%;
+                display: flex;
+                left: 50%;
+                transform: translateX(-50%);
+                justify-content: space-between;
+                width: 250px;
+
+                img {
+                    height: 110px;
+                    width: 110px;
+                    object-fit: cover;
+                }
+            }
+
+            .secondSectionPhotos3 {
+                position: absolute;
+                bottom: -85%;
+                display: flex;
+                left: 50%;
+                transform: translateX(-50%);
+                justify-content: space-between;
+                width: 250px;
+
+                img {
+                    height: 110px;
+                    width: 110px;
+                    object-fit: cover;
+                }
+            }
+
+            .secondSectionBottom {
+                font-size: 15px;
+                bottom: -90%;
+            }
+
+            .thirdSection {
+                position: absolute;
+                bottom: -185%;
+                display: flex;
+                left: 50%;
+                transform: translateX(-50%);
+                justify-content: space-evenly;
+                width: 100%;
+                height: 88%;
+                background: #f7f7f7;
+                align-items: center;
+                flex-direction: column;
+
+                .thirdSectionPhotos {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 89%;
+
+                    .thirdSectionPhoto1 {
+                        width: 275px;
+
+                        img {
+                            width: 275px;
+                        }
+
+                        p {
+                            font-size: 11px;
+                        }
+                    }
+
+                    .thirdSectionPhoto2 {
+                        width: 275px;
+
+                        img {
+                            width: 275px;
+                        }
+
+                        p {
+                            font-size: 11px;
+                        }
+                    }
+
+                    .thirdSectionPhoto3 {
+                        width: 275px;
+
+                        img {
+                            width: 275px;
+                        }
+
+                        p {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+
+            footer {
+                display: flex;
+                position: absolute;
+                bottom: -193%;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                height: 5%;
+                font-size: 13px;
+                flex-direction: column;
+
+                .rightFooter {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 327px;
+                    font-weight: 700;
+                    font-size: 12px;
+                }
+            }
+
+            .upButton {
+                bottom: -191%;
+            }
+        }
+    }
+}

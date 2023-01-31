@@ -1,0 +1,16 @@
+@mixin size($width, $height: false){
+
+    @if $height {
+        width: $width;
+        height: $height;
+    }@else {
+        width: $width;
+        height: $width;
+    }
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
